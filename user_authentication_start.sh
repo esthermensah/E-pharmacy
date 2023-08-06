@@ -1,8 +1,10 @@
 #!/bin/bash
 
-credentials_file="credentials.txt"
-logged_in_file=".logged_in"
-
+#credentials_file="credentials.txt"
+#logged_in_file=".logged_in"
+# this is to use the current working directory
+PROJECT_HOME="."
+credentials_file="$PROJECT_HOME/credentials.txt"
 # Function to check if a username exists in the credentials file
 username_exists() {
     local username="$1"
